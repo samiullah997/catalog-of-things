@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative '../item'
 
 describe Item do
@@ -26,7 +24,7 @@ describe Item do
   before :each do
     @item = Item.new 'new genre', 'new author', 'new source', 'new label', Time.local(2009)
   end
-  
+
   it 'check if test item is an instance of Item class' do
     expect(@item).to be_instance_of Item
   end

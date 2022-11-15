@@ -12,6 +12,11 @@ class Item
     @archived = false
   end
 
+  def label=(label)
+    @label = label
+    label.items << self
+  end
+
   def can_be_archived
     ((Time.now - @publish_date) / 31_557_600).round(2) > 10
   end

@@ -1,4 +1,5 @@
 require_relative '../author'
+require_relative '../modules/author_module'
 require_relative '../item'
 
 describe Author do
@@ -14,5 +15,12 @@ describe Author do
     item = Item.new 'new genre', 'new author', 'new source', 'new label', Time.local(2022)
     @author.add_item(item)
     expect(@author.items.length).to be 1
+  end
+end
+
+describe Authors do
+  it 'test for creating author' do
+    Authors.create_author('test_first_name', 'test_last_name')
+    expect(Authors.author.length).to be 1
   end
 end

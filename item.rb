@@ -1,4 +1,4 @@
-# Class for creating Item
+#=> implementation of Item class
 class Item
   attr_reader :archived
 
@@ -10,6 +10,11 @@ class Item
     @label = label
     @publish_date = publish_date
     @archived = false
+  end
+
+  def label=(label)
+    @label = label
+    label.items << self
   end
 
   def can_be_archived

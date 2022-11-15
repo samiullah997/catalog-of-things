@@ -1,8 +1,6 @@
-# frozen_string_literal: true
-
 require_relative '../item'
 
-# create book class inherite from item class
+#=> Implementation of book class.
 class Book < Item
   attr_accessor :publisher, :cover_state
 
@@ -15,6 +13,6 @@ class Book < Item
   private
 
   def can_be_archived?
-    super || @cover_state == 'bad'
+    super or @cover_state == 'bad'
   end
 end

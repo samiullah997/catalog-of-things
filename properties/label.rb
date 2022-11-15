@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-# create label class
+#=> implementation of Label class
 class Label
   attr_accessor :title, :color
   attr_reader :id, :items

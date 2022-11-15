@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Class for creating Item
 class Item
   attr_reader :archived

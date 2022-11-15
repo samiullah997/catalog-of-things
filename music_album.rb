@@ -1,5 +1,6 @@
 require './item'
 
+# class for creating music album
 class MusicAlbum < Item
   attr_accessor :name, :publish_date, :on_spotify
   attr_reader :id

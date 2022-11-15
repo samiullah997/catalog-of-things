@@ -1,5 +1,4 @@
 module Genres
-  # disable Metrics/MethodLength
   def list_genres
     puts ''
     puts 'List all genres:'
@@ -11,9 +10,7 @@ module Genres
     @genres.each do |genre|
       puts "Genre: #{genre.names}"
     end
-    puts ''
   end
-  # enable Metrics/MethodLength
 
   def save_genre
     gen = []

@@ -1,3 +1,4 @@
+# class for creating genre
 class Genre
   attr_reader :id, :items
   attr_accessor :names

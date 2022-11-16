@@ -2,9 +2,18 @@ require_relative './properties/label'
 require_relative './io-files/save_data'
 require_relative './io-files/read_data'
 require_relative './things/book'
+require_relative './modules/game_module'
+require_relative './modules/author_module'
+require_relative './modules/genre_module'
+require_relative './modules/music_album_module'
 
 #=> app class
 class App
+  include Authors
+  include MusicAlbums
+  include Genres
+  include Games
+
   attr_reader :books, :labels
 
   def initialize
@@ -64,4 +73,9 @@ class App
       end
     end
   end
+
+  def list_authors
+    Authors.list_authors
+  end
 end
+

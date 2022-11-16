@@ -2,7 +2,7 @@ require_relative '../item'
 
 describe Item do
   before :each do
-    @item = Item.new 'new genre', 'new author', 'new source', 'new label', Time.local(2022)
+    @item = Item.new '2022/12/21', '1'
   end
 
   it 'check if test item is an instance of Item class' do
@@ -22,7 +22,7 @@ end
 
 describe Item do
   before :each do
-    @item = Item.new 'new genre', 'new author', 'new source', 'new label', Time.local(2009)
+    @item = Item.new '2009/12/23', '1'
   end
 
   it 'check if test item is an instance of Item class' do
@@ -30,6 +30,7 @@ describe Item do
   end
 
   it 'check if can_be_archived method returns false when publish date is greater than 10 years' do
+    puts @item.can_be_archived
     archive_check = @item.can_be_archived
     expect(archive_check).to equal true
   end

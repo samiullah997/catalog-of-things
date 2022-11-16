@@ -11,7 +11,7 @@
     }
   },
   {
-    "publish_date": "2022/12/31",
+    "publish_date": null,
     "cover_state": "bad",
     "publisher": "Sami",
     "id": 40,
@@ -19,6 +19,28 @@
       "title": "C++",
       "color": "Yellow",
       "id": 18
+    }
+  },
+  {
+    "publish_date": null,
+    "cover_state": "good",
+    "publisher": "niicode",
+    "id": 20,
+    "label": {
+      "title": "niicode",
+      "color": "red",
+      "id": 92
+    }
+  },
+  {
+    "publish_date": null,
+    "cover_state": "good",
+    "publisher": "niicode",
+    "id": 12,
+    "label": {
+      "title": "niicode",
+      "color": "Red",
+      "id": 19
     }
   }
 ]

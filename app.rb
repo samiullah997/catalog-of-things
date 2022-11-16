@@ -2,14 +2,20 @@ require_relative './properties/label'
 require_relative './io-files/save_data'
 require_relative './io-files/read_data'
 require_relative './things/book'
+require_relative './modules/music_album_module'
+require_relative './modules/genre_module'
+
+require_relative './music_album'
 
 #=> app class
 class App
-  attr_reader :books, :labels
+  attr_reader :books, :labels, :music_albums
 
   def initialize
     @books = ReadData.read_books
     @labels = ReadData.read_labels
+    @music_album = ReadData.read_music
+#     @genres = ReadData.read_genres
   end
 
   def quit_app
@@ -41,6 +47,30 @@ class App
     @books << book
     @labels << label
   end
+
+  def add_music_album
+    # label_data
+    print 'Music Album Title: '
+    title = gets.chomp
+    print 'Music Album Color: '
+    color = gets.chomp
+
+    # music_album_data
+    print 'Select Music Album Genre? [rock/pop]: '
+    genre = gets.chomp.downcase
+    print 'Music Album Artist Name: '
+    artist = gets.chomp
+    print 'Music Album Release Date[yyy/mm/dd]: '
+    release_date = gets.chomp
+
+    music_album = MusicAlbum.new(genre, artist, release_date)
+    label = Label.new(title, color)
+    label.add_item(music_album)
+
+    @music_album << music_album
+    @labels << label
+  end
+
 
   def list_of_books
     if @books.empty?

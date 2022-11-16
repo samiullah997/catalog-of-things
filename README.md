@@ -45,11 +45,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@__tbello](https://twitter.com/__tbello)
 - LinkedIn: [Bello Oluwatomisin](https://linkedin.com/in/tbello7)
 
-👤 **Author2**
+👤 **Nii Darku**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@niicode](https://github.com/niicode)
+- Twitter: [@_niicode](https://twitter.com/_niicode)
+- LinkedIn: [Nii Darku](https://linkedin.com/in/niicode)
 
 ## 🤝 Contributing
 

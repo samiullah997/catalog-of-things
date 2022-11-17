@@ -1,0 +1,22 @@
+[
+  {
+    "publish_date": "2022/12/21",
+    "cover_state": "good",
+    "publisher": "John",
+    "id": 65,
+    "label": {
+      "title": "Java",
+      "color": "Red",
+      "id": 40
+    },
+    "author": {
+      "first_name": "Sami",
+      "last_name": "Khan",
+      "id": 311
+    },
+    "genre": {
+      "name": "1",
+      "id": 177
+    }
+  }
+]

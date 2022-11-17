@@ -110,7 +110,7 @@ class App
 
   def list_of_labels
     if @labels.empty?
-      put 'Empty Label List.'
+      puts 'Empty Label List.'
     else
       puts "Labels list, count(#{@labels.count})\n\n"
       @labels.each_with_index do |label, index|

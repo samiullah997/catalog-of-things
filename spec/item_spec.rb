@@ -16,13 +16,13 @@ describe Item do
 
   it 'check if move_to_archive method returns nothing if publish date is less than 10 years' do
     @item.move_to_archive
-    expect(@item.archived).to equal false
+    expect(@item.archived).to be false
   end
 end
 
 describe Item do
   before :each do
-    @item = Item.new '2009/12/23', '1'
+    @item = Item.new '2009-12-1'
   end
 
   it 'check if test item is an instance of Item class' do

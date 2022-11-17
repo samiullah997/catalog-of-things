@@ -10,7 +10,7 @@ class Options
     when 10
       app.quit_app
     else
-      puts 'Wrong input choice, choose a number between 1..10'
+      puts 'Incorrect choice, choose a number between 1..10'
     end
   end
 
@@ -31,9 +31,9 @@ class Options
       # app.list_all_games
     when 6
       puts '# app.list_all_authors'
-      # app.list_all_authors
+      app.list_all_authors
     end
-    clear
+    clear_console
   end
 
   def self.create_item(choice, app)
@@ -47,10 +47,12 @@ class Options
       puts '# app.add_game'
       # app.add_game
     end
-    clear
+    clear_console
   end
 
-  def self.clear
+  def self.clear_console
+    puts "\nPress any key to Continue..."
+    $stdin.getch
     system('clear') || system('cls')
   end
 end

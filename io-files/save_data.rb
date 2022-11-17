@@ -25,6 +25,7 @@ class SaveData
       cover_state: book.cover_state,
       publisher: book.publisher,
       id: book.id,
+      author: book.author,
       label: {
         title: book.label.title,
         color: book.label.color,

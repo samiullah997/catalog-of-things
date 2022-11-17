@@ -13,3 +13,6 @@ class MusicAlbum < Item
     super && on_spotify == true
   end
 end
+
+music = MusicAlbum.new('twilight', '2019-07-09', true)
+puts music.can_be_archived?

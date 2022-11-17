@@ -2,7 +2,9 @@ require_relative '../game'
 
 # module holding methods to interact with the game class
 module Games
-  @games = []
+  class << self; attr_accessor :games; end
+
+  self.games = []
 
   def create_game(genre, author, source, label, publish_date, multiplayer, last_played_at)
     @games << Game.new(genre, author, source, label, publish_date, multiplayer, last_played_at)

@@ -2,19 +2,26 @@ require_relative './properties/label'
 require_relative './io-files/save_data'
 require_relative './io-files/read_data'
 require_relative './things/book'
-require_relative './modules/music_album_module'
+require_relative './modules/game_module'
+require_relative './modules/author_module'
 require_relative './modules/genre_module'
+require_relative './modules/music_album_module'
 
-require_relative './music_album'
+
 
 #=> app class
 class App
-  attr_reader :books, :labels, :music_albums
+  include Authors
+  include MusicAlbums
+  include Genres
+  include Games
+
+  attr_reader :books, :labels
 
   def initialize
     @books = ReadData.read_books
     @labels = ReadData.read_labels
-    @music_album = ReadData.read_music
+    @music_albums = []
 #     @genres = ReadData.read_genres
   end
 
@@ -48,29 +55,6 @@ class App
     @labels << label
   end
 
-  def add_music_album
-    # label_data
-    print 'Music Album Title: '
-    title = gets.chomp
-    print 'Music Album Color: '
-    color = gets.chomp
-
-    # music_album_data
-    print 'Select Music Album Genre? [rock/pop]: '
-    genre = gets.chomp.downcase
-    print 'Music Album Artist Name: '
-    artist = gets.chomp
-    print 'Music Album Release Date[yyy/mm/dd]: '
-    release_date = gets.chomp
-
-    music_album = MusicAlbum.new(genre, artist, release_date)
-    label = Label.new(title, color)
-    label.add_item(music_album)
-
-    @music_album << music_album
-    @labels << label
-  end
-
 
   def list_of_books
     if @books.empty?
@@ -94,4 +78,9 @@ class App
       end
     end
   end
+
+  def list_authors
+    Authors.list_authors
+  end
 end
+

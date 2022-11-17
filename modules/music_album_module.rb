@@ -1,3 +1,5 @@
+require_relative '../music_album'
+
 module MusicAlbums
   def list_music_albums
     puts 'Music albums list is empty! Add a music album.' if @music_albums.empty?
@@ -26,6 +28,7 @@ module MusicAlbums
 
     album = MusicAlbum.new(album_name, published, album_spotify)
     add_properties(album)
+    # ddgenre << album
     @music_albums << album
 
     puts "Music album #{album_name} created successfully."

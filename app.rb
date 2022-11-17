@@ -10,11 +10,12 @@ require_relative './modules/game_module'
 #=> app class
 class App
   attr_reader :books, :labels
+
   include MusicAlbums
   include Genres
   include Authors
   include Games
-  
+
   def initialize
     @books = ReadData.read_books
     @labels = ReadData.read_labels
@@ -25,6 +26,7 @@ class App
     load_authors
     load_games
   end
+
   def quit_app
     SaveData.save_books(@books)
     SaveData.save_labels(@labels)
@@ -33,6 +35,7 @@ class App
     puts 'Thanks! Now existing..'
     exit
   end
+
   def add_book
     # label_data
     print 'Book Title: '
@@ -57,6 +60,7 @@ class App
     @books << book
     @labels << label
   end
+
   def list_of_books
     if @books.empty?
       puts 'Book list is Empty. add some books in the list.'
@@ -68,6 +72,7 @@ class App
       end
     end
   end
+
   def list_of_labels
     if @labels.empty?
       put 'Label List is Empty. add some items'

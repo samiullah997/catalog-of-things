@@ -9,6 +9,7 @@ module MusicAlbums
       p ["#{index})  On Spotify: #{music_album['on_spotify']} - " + s]
     end
   end
+
   def add_music_album
     print 'Name of the Album: '
     album_name = gets.chomp
@@ -29,6 +30,7 @@ module MusicAlbums
     save_album([album])
     puts "Music album #{album_name} created successfully."
   end
+
   # disable Metrics/MethodLength
   def save_album(data)
     album = @load_music_albums
@@ -41,6 +43,7 @@ module MusicAlbums
     end
     File.write('data/music_albums.json', JSON.pretty_generate(album))
   end
+
   # enable Metrics/MethodLength
   def load_album
     [] unless File.exist?('data/music_albums.json')

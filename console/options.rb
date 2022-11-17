@@ -13,6 +13,7 @@ class Options
       puts 'Incorrect choice, choose a number between 1..10'
     end
   end
+
   def self.list_all(choice, app)
     case choice
     when 1
@@ -32,6 +33,7 @@ class Options
     end
     clear_console
   end
+
   def self.create_item(choice, app)
     case choice
     when 7
@@ -44,6 +46,7 @@ class Options
     end
     clear_console
   end
+
   def self.clear_console
     puts "\nPress any key to Continue..."
     $stdin.getch

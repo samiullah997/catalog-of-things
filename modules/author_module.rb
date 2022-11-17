@@ -1,4 +1,4 @@
-require_relative '../author'
+require_relative '../properties/author'
 
 # module holding methods to interact with the author class
 module Authors

@@ -27,9 +27,11 @@ class Options
       puts '# app.list_all_genres'
       # app.list_all_genres
     when 5
-      app.list_games
+      puts '# app.list_all_games'
+      # app.list_all_games
     when 6
-      app.list_authors
+      puts '# app.list_all_authors'
+      # app.list_all_authors
     end
     clear_console
   end
@@ -40,9 +42,10 @@ class Options
       app.add_book
     when 8
       puts '# app.add_music_album'
-      app.add_music_album
+      # app.add_music_album
     when 9
-      app.display_create_game
+      puts '# app.add_game'
+      # app.add_game
     end
     clear_console
   end

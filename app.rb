@@ -2,32 +2,19 @@ require_relative './properties/label'
 require_relative './io-files/save_data'
 require_relative './io-files/read_data'
 require_relative './things/book'
-require_relative './modules/game_module'
-require_relative './modules/author_module'
-require_relative './modules/genre_module'
-require_relative './modules/music_album_module'
 
 #=> app class
 class App
-  include Authors
-  include MusicAlbums
-  include Genres
-  include Games
-
   attr_reader :books, :labels
 
   def initialize
     @books = ReadData.read_books
     @labels = ReadData.read_labels
-    load_authors
-    load_games
   end
 
   def quit_app
     SaveData.save_books(@books)
     SaveData.save_labels(@labels)
-    save_authors
-    save_games
     puts 'Thanks! Now existing..'
     exit
   end
@@ -44,14 +31,10 @@ class App
     cover_state = gets.chomp.downcase
     print 'Publisher Name: '
     publisher = gets.chomp
-    print 'Author Name: '
-    author = gets.chomp
-    print 'Genre'
-    genre = gets.chomp
     print 'Pubishing Date[yyy/mm/dd]: '
     publish_date = gets.chomp
 
-    book = Book.new(publisher, cover_state, genre, author, publish_date)
+    book = Book.new(publisher, cover_state, publish_date)
     label = Label.new(title, color)
     label.add_item(book)
 

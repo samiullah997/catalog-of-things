@@ -12,9 +12,15 @@ describe Author do
   end
 
   it 'check if item is added to author items list' do
-    item = Item.new 'new genre', 'new author', Time.local(2022)
+    item = Item.new '2022/11/15'
     @author.add_item(item)
-    puts @author.items
     expect(@author.items.length).to be 1
+  end
+end
+
+describe Authors do
+  it 'test for creating author' do
+    Authors.create_author('test_first_name', 'test_last_name')
+    expect(Authors.author.length).to be 1
   end
 end

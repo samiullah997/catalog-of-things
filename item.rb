@@ -15,11 +15,21 @@ class Item
     label.items << self unless label.items.include?(self)
   end
 
-  def can_be_archived
+  def author=(author)
+    @author = author
+    author.items << self unless author.items.include?(self)
+  end
+
+  def genre=(genre)
+    @genre = genre
+    genre.items << self unless genre.items.include?(self)
+  end
+
+  def can_be_archived?
     Date.today.year - Date.parse(@publish_date).year > 10
   end
 
   def move_to_archive
-    @archived = true if can_be_archived == true
+    @archived = true if can_be_archived? == true
   end
 end

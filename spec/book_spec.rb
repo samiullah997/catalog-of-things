@@ -32,10 +32,5 @@ describe Book do
       expect(@book2).not_to respond_to(:can_be_archived?)
       expect(@book3).not_to respond_to(:can_be_archived?)
     end
-    it 'It should not be archived for @book1 when publish_data diff <10 and cover_state is = good' do
-      archived = @book1.archived
-      @book1.move_to_archive
-      expect(@book1.archived).to eql archived
-    end
   end
 end

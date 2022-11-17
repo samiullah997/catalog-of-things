@@ -10,7 +10,7 @@ describe Item do
   end
 
   it 'check if can_be_archived method returns false when publish date is less than 10 years' do
-    archive_check = @item.can_be_archived
+    archive_check = @item.can_be_archived?
     expect(archive_check).to equal false
   end
 
@@ -30,8 +30,7 @@ describe Item do
   end
 
   it 'check if can_be_archived method returns false when publish date is greater than 10 years' do
-    puts @item.can_be_archived
-    archive_check = @item.can_be_archived
+    archive_check = @item.can_be_archived?
     expect(archive_check).to equal true
   end
 

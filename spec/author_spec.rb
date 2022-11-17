@@ -1,4 +1,4 @@
-require_relative '../author'
+require_relative '../properties/author'
 require_relative '../modules/author_module'
 require_relative '../item'
 

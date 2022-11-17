@@ -1,14 +1,12 @@
 # class for creating genre
 class Genre
-  attr_reader :id, :items
-  attr_accessor :names
-
-  def initialize(names)
+  attr_reader :id
+  attr_accessor :name, :items
+  def initialize(name)
     @id = rand(1..1000)
-    @names = names
+    @name = name
     @items = []
   end
-
   def add_items(item)
     items << item
     item.genre = self

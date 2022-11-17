@@ -2,43 +2,34 @@ require_relative './properties/label'
 require_relative './io-files/save_data'
 require_relative './io-files/read_data'
 require_relative './things/book'
-require_relative './modules/game_module'
-require_relative './modules/author_module'
-require_relative './modules/genre_module'
 require_relative './modules/music_album_module'
-
-
-
+require_relative './modules/genre_module'
+require_relative './music_album'
 #=> app class
 class App
-  include Authors
-  include MusicAlbums
-  include Genres
-  include Games
-
   attr_reader :books, :labels
-
+  include MusicAlbums
+include Genres
   def initialize
     @books = ReadData.read_books
     @labels = ReadData.read_labels
+    @load_music_albums = load_album
+    @load_genre = load_genre
+    @genres = []
     @music_albums = []
-#     @genres = ReadData.read_genres
   end
-
   def quit_app
     SaveData.save_books(@books)
     SaveData.save_labels(@labels)
     puts 'Thanks! Now existing..'
     exit
   end
-
   def add_book
     # label_data
     print 'Book Title: '
     title = gets.chomp
     print 'Book Color: '
     color = gets.chomp
-
     # book_data
     print 'Select Cover State of the Book? [good/bad]: '
     cover_state = gets.chomp.downcase
@@ -46,16 +37,12 @@ class App
     publisher = gets.chomp
     print 'Pubishing Date[yyy/mm/dd]: '
     publish_date = gets.chomp
-
     book = Book.new(publisher, cover_state, publish_date)
     label = Label.new(title, color)
     label.add_item(book)
-
     @books << book
     @labels << label
   end
-
-
   def list_of_books
     if @books.empty?
       puts 'Book list is Empty. add some books in the list.'
@@ -67,7 +54,6 @@ class App
       end
     end
   end
-
   def list_of_labels
     if @labels.empty?
       put 'Label List is Empty. add some items'
@@ -78,9 +64,4 @@ class App
       end
     end
   end
-
-  def list_authors
-    Authors.list_authors
-  end
 end
-

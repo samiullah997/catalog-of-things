@@ -45,6 +45,12 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@__tbello](https://twitter.com/__tbello)
 - LinkedIn: [Bello Oluwatomisin](https://linkedin.com/in/tbello7)
 
+👤**Author2 Samiullah**
+
+- GitHub: [@samiullah997](https://github.com/samiullah997)
+- Twitter: [@samiullahk997](https://twitter.com/samiullahk997)
+- LinkedIn: [Samiullah Khan](https://www.linkedin.com/in/samiullah-khan-2702b7171/)
+
 👤 **Nii Darku**
 
 - GitHub: [@niicode](https://github.com/niicode)

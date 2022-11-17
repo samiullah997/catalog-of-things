@@ -13,7 +13,6 @@ class Options
       puts 'Incorrect choice, choose a number between 1..10'
     end
   end
-
   def self.list_all(choice, app)
     case choice
     when 1
@@ -22,20 +21,19 @@ class Options
       app.list_of_labels
     when 3
       puts 'app.list_all_music_albums'
-      # app.list_all_music_albums
+      app.list_music_albums
     when 4
       puts '# app.list_all_genres'
-      # app.list_all_genres
+      app.list_genres
     when 5
       puts '# app.list_all_games'
       # app.list_all_games
     when 6
       puts '# app.list_all_authors'
-      app.list_authors
+      # app.list_all_authors
     end
     clear_console
   end
-
   def self.create_item(choice, app)
     case choice
     when 7
@@ -49,7 +47,6 @@ class Options
     end
     clear_console
   end
-
   def self.clear_console
     puts "\nPress any key to Continue..."
     $stdin.getch

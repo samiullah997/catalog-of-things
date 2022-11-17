@@ -6,7 +6,7 @@ class ReadData
     file = File.open('./data/books.json')
     data = JSON.parse(file.read)
     data.each do |item|
-      book = Book.new(item['publisher'], item['cover_state'], item['publisher_date'], item['id'])
+      book = Book.new(item['publisher'], item['cover_state'], item['publish_date'], item['id'])
       label = Label.new(item['label']['title'], item['label']['color'], id: item['label']['id'])
       book.label = label
       books << book

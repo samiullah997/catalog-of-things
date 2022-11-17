@@ -1,24 +1,14 @@
 [
   {
-    "publish_date": null,
+    "publish_date": "re",
     "cover_state": "good",
-    "publisher": "Sami",
-    "id": 14,
+    "publisher": "ef",
+    "id": 77,
+    "author": null,
     "label": {
-      "title": "JavaScript",
-      "color": "Red",
-      "id": 55
-    }
-  },
-  {
-    "publish_date": null,
-    "cover_state": "bad",
-    "publisher": "Sami",
-    "id": 40,
-    "label": {
-      "title": "C++",
-      "color": "Yellow",
-      "id": 18
+      "title": "dew",
+      "color": "we",
+      "id": 7
     }
   }
 ]

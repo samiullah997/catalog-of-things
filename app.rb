@@ -19,11 +19,15 @@ class App
   def initialize
     @books = ReadData.read_books
     @labels = ReadData.read_labels
+    load_authors
+    load_games
   end
 
   def quit_app
     SaveData.save_books(@books)
     SaveData.save_labels(@labels)
+    save_authors
+    save_games
     puts 'Thanks! Now existing..'
     exit
   end
@@ -40,10 +44,14 @@ class App
     cover_state = gets.chomp.downcase
     print 'Publisher Name: '
     publisher = gets.chomp
+    print 'Author Name: '
+    author = gets.chomp
+    print 'Genre'
+    genre = gets.chomp
     print 'Pubishing Date[yyy/mm/dd]: '
     publish_date = gets.chomp
 
-    book = Book.new(publisher, cover_state, publish_date)
+    book = Book.new(publisher, cover_state, genre, author, publish_date)
     label = Label.new(title, color)
     label.add_item(book)
 
@@ -73,9 +81,4 @@ class App
       end
     end
   end
-
-  def list_authors
-    Authors.list_authors
-  end
 end
-

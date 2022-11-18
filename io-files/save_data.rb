@@ -19,6 +19,8 @@ class SaveData
   end
 
   def self.json_format(books)
+
+    ### lets make this resuble for all the data
     {
       publish_date: books.publish_date,
       cover_state: books.cover_state,
@@ -53,20 +55,6 @@ class SaveData
     return if labels_array.empty?
 
     check_file('./data/labels.json', labels_array)
-  end
-
-  def self.save_authors(authors_list)
-    authors_array = []
-    authors_list.each do |author|
-      authors_array << {
-        first_name: author.first_name,
-        last_name: author.last_name,
-        id: author.id
-      }
-    end
-    return if authors_array.empty?
-
-    check_file('./data/authors.json', authors_array)
   end
 
   def self.save_genres(genres_list)

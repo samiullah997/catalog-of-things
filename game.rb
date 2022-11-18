@@ -2,8 +2,7 @@ require_relative './item'
 
 # Class for creating game object
 class Game < Item
-  attr_accessor :publish_date, :id
-  attr_reader :multiplayer, :last_played_at
+  attr_accessor :publish_date, :id, :multiplayer, :last_played_at, :author
 
   def initialize(multiplayer, last_played_at, *args)
     super(*args)

@@ -3,26 +3,8 @@ require_relative './author_module'
 
 module Games
   @@games = []
-  def create_game(publish_date, multiplayer, last_played_at, genre, author)
-    @@games << Game.new(publish_date, multiplayer, last_played_at, genre, author)
-  end
-
-  def display_create_game
-    puts 'Input your game genre:'
-    genre = gets.chomp
-    puts 'Input the game author first name: '
-    author_first_name = gets.chomp
-    puts 'Input the game author last name: '
-    author_last_name = gets.chomp
-    new_author = Authors.create_author(author_first_name, author_last_name)
-    puts 'Input your game publish date'
-    publish_date = gets.chomp
-    puts 'Input your game multiplayer'
-    multiplayer = gets.chomp
-    puts 'Input when last you played your game'
-    last_played_at = gets.chomp
-    new_game = create_game(publish_date, multiplayer, last_played_at, genre, new_author)
-    new_author.add_item(new_game)
+  def create_game(multiplayer, last_played_at, publish_date)
+    @@games << Game.new(multiplayer, last_played_at, publish_date)
   end
 
   def list_games

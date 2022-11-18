@@ -25,7 +25,7 @@ class Options
       # app.list_all_music_albums
     when 4
       puts '# app.list_all_genres'
-      # app.list_all_genres
+      app.list_all_genres
     when 5
       app.list_games
     when 6
@@ -40,7 +40,7 @@ class Options
       app.add_book
     when 8
       puts '# app.add_music_album'
-      app.add_music_album
+      # app.add_music_album
     when 9
       app.display_create_game
     end

@@ -1,4 +1,4 @@
-require_relative '../author'
+require_relative '../properties/author'
 require_relative '../modules/author_module'
 require_relative '../item'
 
@@ -12,7 +12,7 @@ describe Author do
   end
 
   it 'check if item is added to author items list' do
-    item = Item.new 'new genre', 'new author', Time.local(2022)
+    item = Item.new Time.local(2022)
     @author.add_item(item)
     puts @author.items
     expect(@author.items.length).to be 1

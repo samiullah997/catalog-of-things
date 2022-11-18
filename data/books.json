@@ -1,14 +1,102 @@
 [
   {
-    "publish_date": "re",
+    "publish_date": "2022/12/21",
     "cover_state": "good",
-    "publisher": "ef",
-    "id": 77,
-    "author": null,
+    "publisher": "John",
+    "id": 65,
     "label": {
-      "title": "dew",
-      "color": "we",
-      "id": 7
+      "title": "Java",
+      "color": "Red",
+      "id": 40
+    },
+    "author": {
+      "first_name": "Sami",
+      "last_name": "Khan",
+      "id": 311
+    },
+    "genre": {
+      "name": "1",
+      "id": 177
+    }
+  },
+  {
+    "publish_date": "2009/01/23",
+    "cover_state": "good",
+    "publisher": "wcw",
+    "id": 99,
+    "label": {
+      "title": "htell",
+      "color": "kmf",
+      "id": 30
+    },
+    "author": {
+      "first_name": "rfewfw",
+      "last_name": "wfrwf",
+      "id": 560
+    },
+    "genre": {
+      "name": "hwfr",
+      "id": 164
+    }
+  },
+  {
+    "publish_date": "2009/3/3",
+    "cover_state": "good",
+    "publisher": "fcref",
+    "id": 83,
+    "label": {
+      "title": "hello",
+      "color": "de",
+      "id": 48
+    },
+    "author": {
+      "first_name": "gle",
+      "last_name": "edd",
+      "id": 913
+    },
+    "genre": {
+      "name": "dd",
+      "id": 308
+    }
+  },
+  {
+    "publish_date": "2008/2/24",
+    "cover_state": "good",
+    "publisher": "i ad sami",
+    "id": 43,
+    "label": {
+      "title": "hellp",
+      "color": "hi",
+      "id": 66
+    },
+    "author": {
+      "first_name": "yeah we werki",
+      "last_name": "catalog",
+      "id": 79
+    },
+    "genre": {
+      "name": "saving hthins",
+      "id": 874
+    }
+  },
+  {
+    "publish_date": "e",
+    "cover_state": "e",
+    "publisher": "e",
+    "id": 27,
+    "label": {
+      "title": "ewew",
+      "color": "ee",
+      "id": 90
+    },
+    "author": {
+      "first_name": "e",
+      "last_name": "e",
+      "id": 655
+    },
+    "genre": {
+      "name": "e",
+      "id": 902
     }
   }
 ]

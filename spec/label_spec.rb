@@ -3,8 +3,8 @@ require_relative '../properties/label'
 describe Label do
   before :each do
     @label = Label.new('javaScript', 'Red')
-    @book1 = Book.new('Samiullah', 'bad', 'new genre', 'new author', '2022/11/16')
-    @book2 = Book.new('Nii', 'good', 'new genre', 'new author', '2022/11/15')
+    @book1 = Book.new('Samiullah', 'bad', '2022/11/16')
+    @book2 = Book.new('Nii', 'good', '2022/11/15')
   end
 
   context 'Creating a new label' do

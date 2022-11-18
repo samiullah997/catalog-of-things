@@ -11,6 +11,8 @@ module MusicAlbums
     end
   end
 
+  # disable Metrics/MethodLength
+  
   def add_music_album
     print 'Name of the Album: '
     album_name = gets.chomp
@@ -35,6 +37,8 @@ module MusicAlbums
     save_album([album])
     puts "Music album #{album_name} created successfully."
   end
+  # enable Metrics/MethodLength
+
   # disable Metrics/MethodLength
 
   def save_album(data)
@@ -43,7 +47,7 @@ module MusicAlbums
       album << {
         name: music_album.name,
         publish_date: music_album.publish_date,
-        on_spotify: music_album.on_spotify,
+        on_spotify: music_album.on_spotify
       }
     end
     File.write('data/music_albums.json', JSON.pretty_generate(album))

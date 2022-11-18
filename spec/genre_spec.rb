@@ -18,9 +18,9 @@ describe Genre do
     end
   end
 
-    describe '#name' do
-      it 'returns the correct name' do
-        expect(@genre.name).to eql %w[Rock Pop]
-      end
+  describe '#name' do
+    it 'returns the correct name' do
+      expect(@genre.name).to eql %w[Rock Pop]
     end
+  end
 end

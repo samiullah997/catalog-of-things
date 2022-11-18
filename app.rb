@@ -22,6 +22,7 @@ class App
     load_authors
     load_games
     @genres = ReadData.read_genres
+    @load_music_albums = load_album
   end
 
   def quit_app

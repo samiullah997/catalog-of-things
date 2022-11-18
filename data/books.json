@@ -138,5 +138,25 @@
       "name": "m;lm;",
       "id": 909
     }
+  },
+  {
+    "publish_date": "2021/3/22",
+    "cover_state": "good",
+    "publisher": "tomi",
+    "id": 68,
+    "label": {
+      "title": "new added bboolk",
+      "color": "cool color",
+      "id": 97
+    },
+    "author": {
+      "first_name": "new author",
+      "last_name": "hello new author",
+      "id": 530
+    },
+    "genre": {
+      "name": "life",
+      "id": 983
+    }
   }
 ]

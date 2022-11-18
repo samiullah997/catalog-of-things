@@ -17,7 +17,7 @@ module MusicAlbums
   def add_music_album
     print 'Name of the Album: '
     album_name = gets.chomp
-    print 'Published date: '
+    print 'Published date[yyy/mm/dd]: '
     published = gets.chomp
     print 'On Spotify? (y/n): '
     album_spotify = gets.chomp.upcase

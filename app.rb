@@ -65,11 +65,11 @@ class App
   end
 
   def display_create_game
-    print 'Input your game publish date:'
+    print 'Input your game publish date [yyy/mm/dd]:'
     publish_date = gets.chomp
     print 'Input your game multiplayer:'
     multiplayer = gets.chomp
-    puts 'Input when last you played your game'
+    print 'Input when last you played your game [yyy/mm/dd]: '
     last_played_at = gets.chomp
 
     author = display_create_author

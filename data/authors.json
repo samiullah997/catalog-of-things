@@ -86,5 +86,21 @@
     "items": [
 
     ]
+  },
+  {
+    "id": 530,
+    "first_name": "new author",
+    "last_name": "hello new author",
+    "items": [
+      "#<Book:0x00007fe162c63ab8>"
+    ]
+  },
+  {
+    "id": 763,
+    "first_name": "gge",
+    "last_name": "ee",
+    "items": [
+      "#<Game:0x00007fe162c60d68>"
+    ]
   }
 ]

@@ -30,5 +30,13 @@
     "publish_date": "mk",
     "multiplayer": "k",
     "last_played_at": "mk"
+  },
+  {
+    "id": 69,
+    "genre": "#<Genre:0x00007fe162c61088>",
+    "author": "#<Author:0x00007fe162c611f0>",
+    "publish_date": "220",
+    "multiplayer": "hhee",
+    "last_played_at": "hee"
   }
 ]

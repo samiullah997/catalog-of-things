@@ -6,5 +6,37 @@
     "publish_date": "d",
     "multiplayer": "ddd",
     "last_played_at": "d"
+  },
+  {
+    "id": 0,
+    "genre": null,
+    "author": null,
+    "publish_date": "j",
+    "multiplayer": "2078-07-09",
+    "last_played_at": "jjj"
+  },
+  {
+    "id": 83,
+    "genre": null,
+    "author": null,
+    "publish_date": "jbb",
+    "multiplayer": "2020-09-09",
+    "last_played_at": "njnkjn"
+  },
+  {
+    "id": 66,
+    "genre": null,
+    "author": null,
+    "publish_date": "mk",
+    "multiplayer": "k",
+    "last_played_at": "mk"
+  },
+  {
+    "id": 69,
+    "genre": "#<Genre:0x00007fe162c61088>",
+    "author": "#<Author:0x00007fe162c611f0>",
+    "publish_date": "220",
+    "multiplayer": "hhee",
+    "last_played_at": "hee"
   }
 ]

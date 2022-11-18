@@ -98,5 +98,65 @@
       "name": "e",
       "id": 902
     }
+  },
+  {
+    "publish_date": "2020-07-09",
+    "cover_state": "good",
+    "publisher": "kk",
+    "id": 63,
+    "label": {
+      "title": "niicode",
+      "color": "red",
+      "id": 11
+    },
+    "author": {
+      "first_name": "nii",
+      "last_name": "code",
+      "id": 594
+    },
+    "genre": {
+      "name": "fiction",
+      "id": 745
+    }
+  },
+  {
+    "publish_date": "2020-09-09",
+    "cover_state": "good",
+    "publisher": "nlknl",
+    "id": 94,
+    "label": {
+      "title": "knlkn",
+      "color": "lkmlm",
+      "id": 64
+    },
+    "author": {
+      "first_name": "mklm",
+      "last_name": "mklm",
+      "id": 811
+    },
+    "genre": {
+      "name": "m;lm;",
+      "id": 909
+    }
+  },
+  {
+    "publish_date": "2021/3/22",
+    "cover_state": "good",
+    "publisher": "tomi",
+    "id": 68,
+    "label": {
+      "title": "new added bboolk",
+      "color": "cool color",
+      "id": 97
+    },
+    "author": {
+      "first_name": "new author",
+      "last_name": "hello new author",
+      "id": 530
+    },
+    "genre": {
+      "name": "life",
+      "id": 983
+    }
   }
 ]

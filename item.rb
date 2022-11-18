@@ -4,8 +4,12 @@ require 'date'
 class Item
   attr_reader :id, :publish_date, :archived, :genre, :author
 
-  def initialize(publish_date)
-    @publish_date = Date.parse(publish_date)
+  def initialize(genre, author, publish_date, id = Random.rand(0..100))
+    @genre = genre
+    @author = author
+    @id = id
+    @publish_date = publish_date
+    @archived = false
   end
 
   def label=(label)
@@ -14,7 +18,7 @@ class Item
   end
 
   def can_be_archived?
-    Date.today.year - @publish_date.year > 10
+    Date.today.year - Date.parse(@publish_date).year > 10
   end
 
   def move_to_archive

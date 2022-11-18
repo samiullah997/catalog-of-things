@@ -1,5 +1,6 @@
 require 'json'
 require_relative './genre_module'
+
 module MusicAlbums
   include Genres
   def list_music_albums
@@ -9,6 +10,7 @@ module MusicAlbums
       p ["#{index})  On Spotify: #{music_album['on_spotify']} - " + s]
     end
   end
+
   def add_music_album
     print 'Name of the Album: '
     album_name = gets.chomp
@@ -24,12 +26,17 @@ module MusicAlbums
     else
       puts 'Invalid option. Please try again.'
     end
-    album = MusicAlbum.new(album_name, published, album_spotify)
-    add_genres(album_name)
+    print 'Author Name: '
+    author_name = gets.chomp
+    print 'Genre: '
+    genre_name = gets.chomp
+    album = MusicAlbum.new(album_name, album_spotify, genre_name, author_name, published)
+    add_genres(genre_name)
     save_album([album])
     puts "Music album #{album_name} created successfully."
   end
   # disable Metrics/MethodLength
+
   def save_album(data)
     album = @load_music_albums
     data.each do |music_album|
@@ -42,6 +49,7 @@ module MusicAlbums
     File.write('data/music_albums.json', JSON.pretty_generate(album))
   end
   # enable Metrics/MethodLength
+
   def load_album
     [] unless File.exist?('data/music_albums.json')
     JSON.parse(File.read('data/music_albums.json'))

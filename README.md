@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Catalogue of things
 
 > Description the project.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Ruby
+- Rspec
+- Rubocop
 
 ## Live Demo (if available)
 
@@ -25,7 +25,17 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Ruby
+- Rspec
+- Rubocop
+
+
 ### Setup
+
+- Clone the repository to your local machine
+- Open the terminal and run `cd catalogue-of-things`
+- Run `bundle install` to install the required gems
+- Run `bin/main.rb` to start the program
 
 ### Install
 
@@ -33,8 +43,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Run tests
 
-### Deployment
-
+- Run `rspec` to run the tests
 
 
 ## Authors
@@ -51,11 +60,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@samiullahk997](https://twitter.com/samiullahk997)
 - LinkedIn: [Samiullah Khan](https://www.linkedin.com/in/samiullah-khan-2702b7171/)
 
-👤 **Author2**
+👤 **Nii Darku**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/niicode)
+- Twitter: [@twitterhandle](https://twitter.com/niicode)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/niicode)
 
 ## 🤝 Contributing
 

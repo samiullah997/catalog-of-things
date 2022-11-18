@@ -21,10 +21,8 @@ class Options
     when 2
       app.list_of_labels
     when 3
-      puts 'app.list_all_music_albums'
-      # app.list_all_music_albums
+      app.list_music_albums
     when 4
-      puts '# app.list_all_genres'
       app.list_all_genres
     when 5
       app.list_games
@@ -39,8 +37,7 @@ class Options
     when 7
       app.add_book
     when 8
-      puts '# app.add_music_album'
-      # app.add_music_album
+      app.add_music_album
     when 9
       app.display_create_game
     end

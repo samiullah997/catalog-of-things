@@ -19,7 +19,6 @@ class SaveData
   end
 
   def self.json_format(books)
-
     ### lets make this resuble for all the data
     {
       publish_date: books.publish_date,

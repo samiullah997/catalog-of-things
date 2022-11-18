@@ -27,8 +27,7 @@ class Options
       puts '# app.list_all_genres'
       app.list_all_genres
     when 5
-      puts '# app.list_all_games'
-      # app.list_all_games
+      app.list_games
     when 6
       app.list_authors
     end

@@ -20,6 +20,7 @@ class App
     @books = ReadData.read_books
     @labels = ReadData.read_labels
     load_authors
+    load_games
     @genres = ReadData.read_genres
   end
 
@@ -27,6 +28,7 @@ class App
     SaveData.save_books(@books)
     SaveData.save_labels(@labels)
     save_authors
+    save_games
     SaveData.save_genres(@genres)
     puts 'Thanks! Bye Bye'
     exit
@@ -61,13 +63,10 @@ class App
     puts "\n The book '#{label.title}' by #{author.first_name} #{author.last_name} was created successfully!"
   end
 
-
   def display_create_game
-    puts 'Input your game genre:'
-    genre = gets.chomp
-    puts 'Input your game publish date'
+    print 'Input your game publish date:'
     publish_date = gets.chomp
-    puts 'Input your game multiplayer'
+    print 'Input your game multiplayer:'
     multiplayer = gets.chomp
     puts 'Input when last you played your game'
     last_played_at = gets.chomp
@@ -80,17 +79,15 @@ class App
     label = add_label('Game')
 
     new_game = create_game(publish_date, multiplayer, last_played_at)
-    
+
     author.add_item(new_game)
     genre.add_item(new_game)
     label.add_item(new_game)
 
-    @books << book
     @labels << label
     @genres << genre
 
     puts "\n The game '#{label.title}' by #{author.first_name} #{author.last_name} was created successfully!"
-
   end
 
   def add_label(item_type)

@@ -19,7 +19,7 @@ module Authors
 
   def list_authors
     @@author.each_with_index do |n, index|
-      puts "#{index+1}) First Name: #{n.first_name}, Last Name: #{n.last_name}, "
+      puts "#{index + 1}) First Name: #{n.first_name}, Last Name: #{n.last_name}, "
     end
   end
 
@@ -34,11 +34,11 @@ module Authors
   def save_authors
     new_arr = []
     @@author.each do |n|
-      new_arr << { 
-        id: n.id, 
+      new_arr << {
+        id: n.id,
         first_name: n.first_name,
         last_name: n.last_name,
-        items: n.items 
+        items: n.items
       }
     end
     File.write('data/authors.json', JSON.pretty_generate(new_arr)) if new_arr.length.positive?

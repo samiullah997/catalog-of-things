@@ -78,5 +78,25 @@
       "name": "saving hthins",
       "id": 874
     }
+  },
+  {
+    "publish_date": "e",
+    "cover_state": "e",
+    "publisher": "e",
+    "id": 27,
+    "label": {
+      "title": "ewew",
+      "color": "ee",
+      "id": 90
+    },
+    "author": {
+      "first_name": "e",
+      "last_name": "e",
+      "id": 655
+    },
+    "genre": {
+      "name": "e",
+      "id": 902
+    }
   }
 ]
